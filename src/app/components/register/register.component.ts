@@ -1,14 +1,18 @@
 import {Component, OnInit} from '@angular/core';
 import {FormsModule} from "@angular/forms";
 import {PaginatorModule} from "primeng/paginator";
+import {HeaderComponent} from "../header/header.component";
+import {FooterComponent} from "../footer/footer.component";
 
 @Component({
   selector: 'app-register',
   standalone: true,
-    imports: [
-        FormsModule,
-        PaginatorModule
-    ],
+  imports: [
+    FormsModule,
+    PaginatorModule,
+    HeaderComponent,
+    FooterComponent
+  ],
   templateUrl: './register.component.html',
   styleUrl: './register.component.css'
 })
