@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-  {path:'',redirectTo:'/ads',pathMatch:"full"},
+  {path:'',redirectTo:'/home',pathMatch:"full"},
   {path:'ads',loadComponent:()=>import('./components/ads/ads.component').then(c=>c.AdsComponent)},
   {path:'register',loadComponent:()=>import('./components/register/register.component').then(c=>c.RegisterComponent)},
   {path:'cat',loadComponent:()=>import('./components/post-ad-cat/post-ad-cat.component').then(c=>c.PostAdCatComponent)},
