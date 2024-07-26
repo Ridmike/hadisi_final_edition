@@ -2,6 +2,13 @@
   background-image: linear-gradient(to bottom, #4e62fc, #008cff, #00a9ff, #00c1f2, #47d4e0);
 }
 
+.header-nav-outer{
+  display: none; /* hidden */
+  width: 100%; /* w-full */
+  align-items: center; /* items-center */
+  justify-content: space-between; /* justify-between */
+}
+
 .logo{
   width: 40px;
   height: 40px;
@@ -94,10 +101,40 @@
   color: darkblue;
 }
 
+
 @media (max-width: 600px) {
 
   .ad-post-btn{
     display: none;
+  }
+
+
+}
+
+@media (min-width: 770px) {
+  .svg-main-outer{
+    display: none;
+  }
+
+  .header-sidebar {
+    display: none;
+  }
+
+  .header-nav-outer{
+    display: flex; /* md:flex */
+    width: auto; /* md:w-auto */
+    order: 1;
+  }
+}
+
+@media (max-width: 770px) {
+  .nav-text{
+    font-size: 1rem;
+    margin: 0.8rem;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding-left: 1px;
   }
 
   .header-sidebar.hidden {
@@ -109,12 +146,10 @@
   }
 }
 
-@media (min-width: 600px) {
-  .svg-main-outer{
-    display: none;
+@media (min-width: 850px) {
+
+  .header-nav-panel{
+    gap: 2rem;
   }
 
-  .header-sidebar {
-    display: none;
-  }
 }
