@@ -68,7 +68,7 @@
   height: 100vh;
   width: 250px;
   z-index: 999;
-  background-color: #707676;
+  background-color: #EEEEEE;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -84,6 +84,14 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 998;
+}
+
+.side-nav-text{
+  font-size: 1.2rem;
+  margin: 1rem;
+  position: relative;
+  text-decoration: none;
+  color: darkblue;
 }
 
 @media (max-width: 600px) {

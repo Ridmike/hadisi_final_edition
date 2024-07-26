@@ -206,6 +206,14 @@
   font-weight: bold;
 }
 
+@media (max-width: 1248px) {
+  .main-text{
+    font-size: 50px;
+    padding-left: 10px;
+    line-height: 80px;
+  }
+}
+
 @media (max-width: 1024px) {
   .main-text {
     font-size: 45px;
@@ -224,6 +232,96 @@
   .cards {
     width: 7rem;
     height: 7rem;
+  }
+
+  .icon-outer {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .icon-outer img {
+    width: 2.5rem;
+  }
+
+  .label-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .upper-tile-outer {
+    flex-direction: column;
+    height: 58%;
+  }
+
+  .about-sec {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .main-area {
+    width: 80%;
+  }
+
+  .main-text {
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .vector-area {
+    width: 75%;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .button-outer {
+    width: 80%;
+  }
+
+  .all-ads-button {
+    font-size: 20px;
+    height: 35px;
+  }
+
+  .serach-outer {
+    width: 70%;
+    height: 3rem;
+    margin: 2rem auto;
+  }
+
+  .searchTerm {
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .searchButton {
+    width: 35px;
+    height: 35px;
+  }
+
+  .category-set {
+    width: 90%;
+  }
+
+  .header-text {
+    width: 100%;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 1rem;
+  }
+
+  .line-set {
+    flex-direction: row;
+    align-items: center;
+    /*border: 1px solid black;*/
+  }
+
+  .cards {
+    width: 25%;
+    height: auto;
+    margin-bottom: 1rem;
   }
 
   .icon-outer {
