@@ -76,15 +76,37 @@
   backdrop-filter: blur(10px);
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
 @media (max-width: 600px) {
 
   .ad-post-btn{
     display: none;
   }
+
+  .header-sidebar.hidden {
+    display: none;
+  }
+
+  .header-sidebar {
+    display: flex;
+  }
 }
 
 @media (min-width: 600px) {
   .svg-main-outer{
+    display: none;
+  }
+
+  .header-sidebar {
     display: none;
   }
 }
