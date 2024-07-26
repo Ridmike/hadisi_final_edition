@@ -50,3 +50,71 @@
 .nav-text:hover::after {
   width: 100%;
 }
+
+.svg-outer{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.svg-main-outer{
+  border: #FFDB00 solid 1px;
+  background: #FFDB00;
+}
+
+.header-sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  backdrop-filter: blur(10px);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+.side-nav-text{
+  font-size: 1.2rem;
+  margin: 1rem;
+  position: relative;
+  text-decoration: none;
+  color: darkblue;
+}
+
+@media (max-width: 600px) {
+
+  .ad-post-btn{
+    display: none;
+  }
+
+  .header-sidebar.hidden {
+    display: none;
+  }
+
+  .header-sidebar {
+    display: flex;
+  }
+}
+
+@media (min-width: 600px) {
+  .svg-main-outer{
+    display: none;
+  }
+
+  .header-sidebar {
+    display: none;
+  }
+}
