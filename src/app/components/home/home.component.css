@@ -21,7 +21,7 @@
 .about-sec{
   /*border: 1px solid black;*/
   width: 100%;
-  height: 80%;
+  height: 90%;
   display: flex;
   align-items: center;
 }
@@ -49,8 +49,9 @@
   /*border: 1px solid black;*/
   width: 50%;
   height: 100%;
-
+  align-content: center;
 }
+
 .main-btn-outer{
   margin: auto;
   display: flex;
@@ -158,7 +159,6 @@
   height: 70%;
   display: flex;
   flex-direction: column;
-
 }
 
 .cards{
@@ -215,9 +215,24 @@
 }
 
 @media (max-width: 1024px) {
+
+  .about-sec{
+    height: 90%
+  }
+
+  .vector-area{
+    width: 50%;
+    height: 100%;
+    align-content: center;
+  }
+
+  .main-area{
+    height: 95%
+  }
+
   .main-text {
-    font-size: 45px;
-    line-height: 70px;
+    font-size: 42px;
+    line-height: 60px;
   }
 
   .searchTerm {
@@ -430,3 +445,17 @@
   }
 }
 
+@media (max-width: 500px) {
+
+  .category-set{
+    /*margin: auto;*/
+    width: 100%;
+    height: 80%;
+  }
+
+  .set-outer{
+    width: 94%;
+    height: 70%;
+  }
+
+}
