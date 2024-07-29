@@ -1,5 +1,12 @@
 {
   "routes": [
-    "/ads"
+    "/about",
+    "/ads",
+    "/cat",
+    "/contactus",
+    "/form",
+    "/home",
+    "/login",
+    "/register"
   ]
 }
