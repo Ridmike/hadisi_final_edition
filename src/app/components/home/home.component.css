@@ -330,7 +330,6 @@
   .line-set {
     flex-direction: row;
     align-items: center;
-    /*border: 1px solid black;*/
   }
 
   .cards {
@@ -422,7 +421,6 @@
   .line-set {
     flex-direction: row;
     align-items: center;
-    /*border: 1px solid black;*/
   }
 
   .cards {
