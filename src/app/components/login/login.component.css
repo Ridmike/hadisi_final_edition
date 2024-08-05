@@ -76,3 +76,12 @@
   border-radius: 10px;
   border: none;
 }
+
+
+@media (max-width: 480px) {
+  .text-or-login{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+}
