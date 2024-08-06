@@ -5,7 +5,7 @@
 
 .main-outer{
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .sec-out{
@@ -17,20 +17,11 @@
 }
 
 .content-outer{
-  /*border: solid 1px black;*/
+  /*border: solid 1px red;*/
   align-content: center;
   width: 50%;
   height: 100%;
   padding: 2rem;
-}
-
-.para-outer{
-  font-size: 16px;
-  font-family: "Josefin Sans", sans-serif;
-  text-align: justify;
-  line-height: 2rem;
-  letter-spacing: 2px;
-
 }
 
 .h-outer{
@@ -41,22 +32,30 @@
   letter-spacing: 2px;
 }
 
+.para-outer{
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: justify;
+  line-height: 2rem;
+  letter-spacing: 2px;
+}
+
 .img-outer{
   /*border: 1px solid black;*/
   border-radius: 100%;
-  height: 60%;
+  width: 60%;
   margin: auto;
 }
 
 .main-outer-form{
-  /*border: solid 1px black;*/
+  /*border: solid 1px gold;*/
   width: 50%;
   height: 100%;
 }
 
 .form-outer{
   /*border: solid 1px blue;*/
-  width: 70%;
+  width: 75%;
   height: 80%;
   margin: auto;
   padding: 2rem;
@@ -129,4 +128,105 @@
   height: 2.5rem;
 }
 
+@media (max-width: 1246px) {
+  .sec-out{
+    height: 90%;
+  }
 
+  .content-outer{
+    padding: 1rem 1.4rem 1.4rem;
+  }
+
+  .h-outer{
+    padding-bottom: 0.7rem;
+    font-size: 24px;
+    letter-spacing:  0.094rem;
+  }
+
+  .para-outer{
+    font-size: 14px;
+    line-height: 1.6rem;
+    letter-spacing: 0.094rem;
+  }
+
+  .img-outer{
+    width: 75%;
+  }
+
+  .form-outer{
+    height: auto;
+  }
+
+  .email-outer{
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .form-outer{
+    width: 82%;
+  }
+
+  .logo-form-outer{
+    width: 40%;
+  }
+}
+
+@media (max-width: 900px) {
+  .sec-out{
+    width: 96%
+  }
+}
+
+@media (max-width: 700px) {
+  .main-outer{
+    height: auto;
+    margin-bottom: 4rem;
+  }
+
+  .sec-out{
+    flex-direction: column;
+  }
+
+  .content-outer{
+    width: 100%;
+    height: auto;
+  }
+
+  .mob-outer{
+    display: flex;
+  }
+
+  .img-outer{
+    /*align-self: center;*/
+    width: 40%;
+    /*height: 30%;*/
+    margin: auto;
+  }
+
+  .para-outer{
+    width: 50%
+  }
+
+  .main-outer-form{
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .form-outer{
+    width: 90%;
+  }
+
+  .content-outer{
+    height: auto;
+  }
+
+  .main-outer-form{
+    height: auto;
+    width: 100%
+  }
+}
