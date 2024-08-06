@@ -1,8 +1,92 @@
 .main-outer{
-  /*border : #FFDB00 2px solid;*/
+  /*border : 1px solid black;*/
+  width: 100%;
+  height: auto;
 }
 
 .form-outer{
   border: 2px solid black;
+  margin: 6rem auto;
+  width: 50%;
+  border-radius: 20px;
+}
 
+.main-text{
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.input-outer{
+  width: 100%;
+  height: 2.2rem;
+}
+
+@media (max-width: 1245px) {
+  .form-outer{
+    width: 52%
+  }
+}
+
+@media (max-width: 1050px) {
+  .form-outer{
+    width: 60%
+  }
+}
+
+@media (max-width: 900px) {
+  .form-outer{
+    width: 65%
+  }
+}
+
+@media (max-width: 800px) {
+  .form-outer{
+    width: 70%;
+  }
+}
+
+@media (max-width: 700px) {
+  .form-outer{
+    width: 80%;
+  }
+
+  .input-sec-outer{
+    width: 75%
+  }
+}
+
+@media (max-width: 600px) {
+  .form-outer{
+    width: 85%;
+  }
+
+  .input-sec-outer{
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-outer{
+    width: 92%;
+  }
+
+  .input-sec-outer{
+    width: 88%;
+  }
+}
+
+@media (max-width: 400px) {
+  .input-sec-outer{
+    width: 95%;
+  }
+}
+
+@media (max-width: 350px) {
+  .input-sec-outer{
+    flex-direction: column;
+    text-align: center;
+  }
 }
