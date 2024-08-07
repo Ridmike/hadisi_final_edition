@@ -216,8 +216,13 @@
 
 @media (max-width: 1024px) {
 
+  .upper-sec-outer{
+    height: 90%;
+
+  }
+
   .about-sec{
-    height: 90%
+    height: 90%;
   }
 
   .vector-area{
@@ -263,10 +268,11 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 801px) {
   .upper-tile-outer {
+    padding-bottom: 2rem;
     flex-direction: column;
-    height: 58%;
+    height: auto;
   }
 
   .about-sec {
@@ -349,6 +355,12 @@
 
   .label-text {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 857px) {
+  .upper-sec-outer{
+    height: 100%;
   }
 }
 
