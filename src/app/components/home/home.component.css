@@ -35,6 +35,7 @@
 }
 
 .main-text{
+  /*border: 1px solid black;*/
   font-size: 55px;
   line-height: 90px;
   font-family: "Rowdies", sans-serif;
@@ -208,16 +209,26 @@
 
 @media (max-width: 1248px) {
   .main-text{
-    font-size: 50px;
-    padding-left: 10px;
-    line-height: 80px;
+    font-size: 49px;
+    padding-left: 40px;
+    line-height: 75px;
+  }
+}
+
+@media (max-width: 1053px) {
+  .main-text{
+    font-size: 47px;
   }
 }
 
 @media (max-width: 1024px) {
 
+  .upper-sec-outer{
+    height: 90%;
+  }
+
   .about-sec{
-    height: 90%
+    height: 90%;
   }
 
   .vector-area{
@@ -227,12 +238,12 @@
   }
 
   .main-area{
-    height: 95%
+    height: 95%;
   }
 
   .main-text {
     font-size: 42px;
-    line-height: 60px;
+    line-height: 58px;
   }
 
   .searchTerm {
@@ -241,7 +252,7 @@
 
   .searchButton {
     width: 40px;
-    height: 40px;
+    height: 38px;
   }
 
   .cards {
@@ -263,10 +274,19 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 913px) {
+
+  .main-text {
+    font-size: 38px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 801px) {
   .upper-tile-outer {
+    padding-bottom: 2rem;
     flex-direction: column;
-    height: 58%;
+    height: auto;
   }
 
   .about-sec {
@@ -279,8 +299,8 @@
   }
 
   .main-text {
-    font-size: 30px;
-    line-height: 45px;
+    font-size: 38px;
+    line-height: 50px;
     text-align: center;
     margin-top: 1rem;
   }
@@ -374,6 +394,7 @@
     text-align: center;
     margin-top: 1rem;
     font-weight: 150;
+    padding-left: 0;
   }
 
   .vector-area {
