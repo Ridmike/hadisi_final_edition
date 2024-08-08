@@ -14,7 +14,7 @@
         </svg>
       </div>
       <div class="bg-white overflow-hidden transition-all max-h-0 peer-checked:max-h-full peer-checked:border-b-2">
-        <div class="p-4">
+        <div class="p-4 border-2 ">
           <div class="subCate-body ml-10 py-2" *ngFor="let subCategory of mainCategory.subCats">
             <input type="checkbox" id="'category'+{{mainCategory.id}}+{{subCategory.subId}}" name="'category'+{{mainCategory.id}}+{{subCategory.subId}}" (change)="categoriesOnClick(mainCategory,subCategory)"  value="{{mainCategory}}">
             <label for="'category'+{{mainCategory.id}}+{{subCategory.subId}}" class="ml-2"> {{ subCategory.subCatName }}</label><br>
