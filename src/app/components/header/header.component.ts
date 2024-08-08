@@ -20,20 +20,6 @@ export class HeaderComponent {
 
   logo: string = 'public/images/logo.png';
 
-  // closeSideBar(){
-  //   const sidebar = document.getElementById('sidebar');
-  //   if (sidebar){
-  //     sidebar.classList.add('hidden');
-  //   }
-  // }
-  //
-  // openSideBar(){
-  //   const openside = document.getElementById('openside');
-  //   if (openside){
-  //     openside.classList.add('open');
-  //   }
-  // }
-
   sideBarChange = false;
 
   sideBarFunc(){
