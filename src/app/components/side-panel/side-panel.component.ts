@@ -39,4 +39,10 @@ export class SidePanelComponent{
 
   }
 
+  // catSection = false;
+  //
+  // categoriesFun() {
+  //   this.catSection = !this.catSection;
+  // }
+
 }

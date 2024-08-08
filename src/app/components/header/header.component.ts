@@ -18,8 +18,6 @@ import {NgClass} from "@angular/common";
 })
 export class HeaderComponent {
 
-  logo: string = 'public/images/logo.png';
-
   sideBarChange = false;
 
   sideBarFunc(){
