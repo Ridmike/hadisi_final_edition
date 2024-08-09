@@ -13,8 +13,8 @@
             <div class="accordion-grid">
               <p-accordionTab [header]="category.section" *ngFor="let category of catList">
                 <div class="content" *ngFor="let subCat of category.subCats">
-                  <input type="checkbox" name="'checkCategory-'+{{category.id + subCat.subId}}" id="'checkCategory-'+{{category.id + subCat.subId}}" class="ml-10">
-                  <label for="'checkCategory-'+{{category.id + subCat.subId}}">{{subCat.subCatName}}</label>
+                  <input type="checkbox" name="'checkCategory-'+{{category.id + subCat.subId}}" id="'checkCategory-'+{{category.id + subCat.subId}}" class="cursor-pointer ml-10">
+                  <label class="cursor-pointer" for="'checkCategory-'+{{category.id + subCat.subId}}">{{subCat.subCatName}}</label>
                 </div>
               </p-accordionTab>
             </div>

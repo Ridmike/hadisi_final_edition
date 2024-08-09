@@ -1,37 +1,41 @@
-body{
+body {
   margin: 0;
   padding: 0;
 }
 
-*{
+* {
   box-sizing: border-box;
   overflow: hidden;
   overflow: hidden;
 }
 
-.outer-layer{
+.outer-layer {
   width: 100%;
-  height: 100vh;
+  border: 1px solid red;
+  height: auto;
   margin: 0;
   padding: 3rem;
 }
 
-.inner-layer{
-  border: 1px solid rgb(148 163 184);
+.inner-layer {
   margin: auto;
-  width: 80%;
+  padding: 20px;
+  width: 90%;
   max-height: fit-content;
-  border-radius: 20px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
 }
 
-.form-outer{
+.form-outer {
   /*border: 1px solid black;*/
   width: 100%;
   height: auto;
   margin: auto;
 }
 
-.name-input{
+.name-input {
   /*border: 1px solid blue;*/
   width: 100%;
   height: auto;
@@ -40,7 +44,7 @@ body{
   margin-top: 2rem;
 }
 
-.name-outer{
+.name-outer {
   /*border: 1px solid red;*/
   display: flex;
   flex-direction: column;
@@ -50,14 +54,14 @@ body{
   margin-bottom: 2rem;
 }
 
-.phone-address{
+.phone-address {
   /*  border: 1px solid red;*/
   width: 100%;
   height: auto;
   display: flex;
 }
 
-.phone-outer{
+.phone-outer {
   /*border: 1px solid darkgreen;*/
   display: flex;
   flex-direction: column;
@@ -66,7 +70,7 @@ body{
   margin: auto;
 }
 
-.address-outer{
+.address-outer {
   /*border: 1px solid blueviolet;*/
   display: flex;
   flex-direction: column;
@@ -76,23 +80,23 @@ body{
 
 }
 
-.button-frame{
+.button-frame {
   margin: auto;
   margin-top: 2rem;
 }
 
-.post-inner{
+.post-inner {
   margin: auto;
 }
 
-.title-outer{
+.title-outer {
   margin: auto;
   margin-top: 2rem;
   /*border: 1px solid red;*/
   width: 50rem;
 }
 
-.desc-outer{
+.desc-outer {
   margin: auto;
   margin-top: 2rem;
   /*border: 1px solid purple;*/
@@ -101,14 +105,14 @@ body{
 
 }
 
-.condition-inner{
+.condition-inner {
   /*border: 1px solid brown;*/
   width: 50rem;
   height: auto;
   display: flex;
 }
 
-.condition-outer{
+.condition-outer {
   margin: auto;
   margin-top: 2rem;
   /*border: 1px solid brown;*/
@@ -118,7 +122,7 @@ body{
   flex-direction: column;
 }
 
-.file-up-outer{
+.file-up-outer {
   margin: auto;
   margin-top: 2rem;
   /*border:1px solid red;*/
@@ -127,7 +131,7 @@ body{
 }
 
 
-.card-outer{
+.card-outer {
   margin: auto;
   /*border: 1px solid black;*/
   width: 95%;
