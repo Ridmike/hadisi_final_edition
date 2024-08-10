@@ -3,6 +3,7 @@ import {SidePanelComponent} from "../side-panel/side-panel.component";
 import {AdsPanelComponent} from "../ads-panel/ads-panel.component";
 import {FooterComponent} from "../footer/footer.component";
 import {FloatBtnComponent} from "../float-btn/float-btn.component";
+import {MatIcon} from "@angular/material/icon";
 
 @Component({
   selector: 'app-main-outer',
@@ -11,7 +12,8 @@ import {FloatBtnComponent} from "../float-btn/float-btn.component";
     SidePanelComponent,
     AdsPanelComponent,
     FooterComponent,
-    FloatBtnComponent
+    FloatBtnComponent,
+    MatIcon
   ],
   templateUrl: './main-outer.component.html',
   styleUrl: './main-outer.component.css'
