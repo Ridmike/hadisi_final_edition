@@ -28,7 +28,7 @@
   height: 50px;
   border-radius: 100PX 0 0 100PX;
   outline: none;
-  color: #2169AD;
+  color: #00ACFD;
 }
 
 .icon-search{
@@ -36,8 +36,8 @@
 }
 
 .searchBtn {
-  background-color: #2169AD;;
-  color: #2169AD;
+  background-color: #00ACFD;;
+  color: #00ACFD;
   border: 5px solid;
   border-radius : 0 100PX 100PX 0;
   border-left: none;
@@ -79,6 +79,7 @@
 .filter-tag{
   font-size: 20px;
   font-weight: bold;
+  color: #3B82F6;
   margin-bottom: 3px;
 }
 

@@ -9,7 +9,7 @@
 }
 
 .sec-out{
-  border: solid 1px black;
+  /*border: solid 1px black;*/
   margin: 2rem auto auto;
   display: flex;
   height: 90%;
@@ -17,7 +17,7 @@
 }
 
 .content-outer{
-  border: solid 1px red;
+  /*border: solid 1px red;*/
   align-content: center;
   width: 50%;
   height: 100%;
