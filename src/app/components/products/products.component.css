@@ -233,13 +233,13 @@
 @media (max-width: 500px) {
 
   .main-outer-modal{
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     width: 390px;
     height: 670px;
   }
 
   .images-container{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     height: 330px;
     width: 370px;
     /*margin: auto auto 1rem;*/
@@ -251,7 +251,7 @@
   }
 
   .image-onScreen{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 370px;
     height: 310px;
     margin: auto;
@@ -266,13 +266,13 @@
 @media (max-width: 450px) {
 
   .main-outer-modal{
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     width: 380px;
     height: 670px;
   }
 
   .images-container{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     height: 330px;
     width: 100%;
     display: flex;
@@ -286,7 +286,7 @@
   }
 
   .image-onScreen{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 100%;
     height: 310px;
   }
