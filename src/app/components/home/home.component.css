@@ -6,12 +6,14 @@
 .upper-sec-outer{
   /*border: 1px solid red;*/
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 
 .upper-tile-outer{
   /*border: 1px solid black;*/
-  height: 73%;
+  height: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   background-image: linear-gradient(to bottom, #4e62fc, #008cff, #00a9ff, #00c1f2, #47d4e0);
   backdrop-filter: blur(5px);
   display: flex;
@@ -19,9 +21,10 @@
 }
 
 .about-sec{
+  margin: auto;
   /*border: 1px solid yellow;*/
-  width: 100%;
-  height: 97%;
+  max-width: 1450px;
+  height: auto;
   display: flex;
   align-items: center;
 }
@@ -29,18 +32,19 @@
 .main-area{
   /*border: 1px solid black;*/
   width: 50%;
-  height: 90%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .main-text{
+  margin-bottom: 2rem;
   height: auto;
   width: 90%;
   /*border: 1px solid red;*/
-  font-size: 45px;
-  line-height: 70px;
+  font-size: 42px;
+  line-height: 65px;
   font-family: "Rowdies", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -51,7 +55,6 @@
 
 .button-outer{
   /*border: 1px solid red;*/
-  margin: auto;
   width: 90%;
 }
 
@@ -67,10 +70,15 @@
 .vector-area{
   /*border: 1px solid black;*/
   width: 50%;
-  height: 90%;
+  height: auto;
   align-content: center;
 }
 
+.vector-img{
+  margin:auto;
+  max-height: 450px;
+  /*border: 1px solid black;*/
+}
 
 .down-tile-outer{
   /*border: 1px solid red;*/
@@ -202,46 +210,40 @@
 }
 
 @media (max-width: 1248px) {
-  .upper-tile-outer{
-    height: 72%;
-  }
 
   .main-text{
-    font-size: 42px;
+    font-size: 40px;
     line-height: 60px;
   }
 }
 
 @media (max-width: 1158px) {
   .main-text{
-    font-size: 40px;
-    line-height: 59px;
-  }
-}
-
-@media (max-width: 1108px) {
-  .main-text{
     font-size: 39px;
     line-height: 58px;
+  }
+
+  .all-ads-button{
+    height: 40px;
   }
 }
 
 @media (max-width: 1077px) {
   .main-text{
     font-size: 37px;
-    line-height: 56px;
+    line-height: 57px;
+  }
+
+  .all-ads-button{
+    height: 38px;
   }
 }
 
 @media (max-width: 1024px) {
 
-  .upper-tile-outer{
-    height: 70%;
-  }
-
   .main-text {
     font-size: 36px;
-    line-height: 55px;
+    line-height: 56px;
   }
 
   .searchTerm {
@@ -250,7 +252,7 @@
 
   .searchButton {
     width: 40px;
-    height: 38px;
+    height: 40px;
   }
 
   .cards {
@@ -276,82 +278,75 @@
 
   .main-text {
     font-size: 34px;
-    line-height: 53px;
+    line-height: 54px;
   }
 
-  .all-ads-button{
-    height: 42px;
-  }
 }
 
 @media (max-width: 940px) {
   .main-text{
     font-size: 32px;
+    line-height: 50px;
+  }
+
+  .all-ads-button{
+    height: 35px;
   }
 }
 
-@media (max-width: 801px) {
-  .upper-tile-outer {
-    padding-bottom: 2rem;
-    flex-direction: column;
-    height: auto;
+@media (max-width: 885px) {
+  .main-text{
+    font-size: 30px;
+    line-height: 48px;
   }
+}
 
-  .about-sec {
-    flex-direction: row;
-    height: auto;
+@media (max-width: 859px) {
+  .main-text{
+    font-size: 29px;
+    line-height: 46px;
   }
+}
 
-  .main-area {
-    width: 80%;
-  }
+@media (max-width: 825px) {
 
   .main-text {
-    font-size: 38px;
-    line-height: 50px;
-    text-align: center;
-    margin-top: 1rem;
+    font-size: 28px;
+    line-height: 48px;
   }
 
-  .vector-area {
-    width: 75%;
-    height: auto;
-    margin-top: 1rem;
+  .down-tile-outer{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
-  .button-outer {
-    width: 80%;
-  }
-
-  .all-ads-button {
-    font-size: 20px;
-    height: 35px;
+  .vector-img{
+    height: 300px;
   }
 
   .serach-outer {
     width: 70%;
-    height: 3rem;
+    height: 5rem;
     margin: 2rem auto;
   }
 
   .searchTerm {
-    height: 35px;
+    height: 40px;
     font-size: 14px;
   }
 
   .searchButton {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
   }
 
   .category-set {
-    width: 90%;
+    width: 85%;
   }
 
   .header-text {
     width: 100%;
     justify-content: center;
-    padding-left: 0;
     margin-top: 1rem;
   }
 
@@ -380,11 +375,27 @@
   }
 }
 
+@media (max-width: 776px) {
+  .main-text {
+    font-size: 26px;
+    line-height: 46px;
+  }
+
+  .all-ads-button{
+    height: 30px;
+    font-size: 22px;
+  }
+
+}
+
+
 /* For mobile phones */
 @media (max-width: 600px) {
   .upper-tile-outer {
     flex-direction: column;
     height: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
   }
 
   .about-sec {
@@ -393,22 +404,25 @@
   }
 
   .main-area {
-    width: 80%;
+    width: 100%;
+    margin-bottom: 1rem;
   }
 
   .main-text {
-    font-size: 30px;
-    line-height: 45px;
+    font-size: 28px;
+    line-height: 42px;
     text-align: center;
-    margin-top: 1rem;
-    font-weight: 150;
-    padding-left: 0;
+    font-weight: 300;
+    margin-bottom: 1rem;
   }
 
   .vector-area {
-    width: 75%;
+    width: 100%;
     height: auto;
-    margin-top: 1rem;
+  }
+
+  .vector-img{
+    height: 200px;
   }
 
   .button-outer {
