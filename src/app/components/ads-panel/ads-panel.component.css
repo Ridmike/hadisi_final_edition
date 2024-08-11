@@ -64,6 +64,10 @@
     line-height: 22px;
   }
 
+  .dic-main-sec{
+    padding: 10px;
+  }
+
 }
 
 @media (max-width: 465px) {
