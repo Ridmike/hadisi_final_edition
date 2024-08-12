@@ -12,8 +12,8 @@
 .upper-tile-outer{
   /*border: 1px solid black;*/
   height: auto;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
   background-image: linear-gradient(to bottom, #4e62fc, #008cff, #00a9ff, #00c1f2, #47d4e0);
   backdrop-filter: blur(5px);
   display: flex;
@@ -320,10 +320,6 @@
     margin-bottom: 4rem;
   }
 
-  .vector-img{
-    height: 300px;
-  }
-
   .serach-outer {
     width: 70%;
     height: 5rem;
@@ -377,13 +373,26 @@
 
 @media (max-width: 776px) {
   .main-text {
-    font-size: 26px;
-    line-height: 46px;
+    font-size: 27px;
+    line-height: 42px;
   }
 
   .all-ads-button{
     height: 30px;
     font-size: 22px;
+  }
+
+}
+
+@media (max-width: 666px) {
+  .main-text {
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  .all-ads-button{
+    height: 26px;
+    font-size: 20px;
   }
 
 }
@@ -409,11 +418,12 @@
   }
 
   .main-text {
-    font-size: 28px;
-    line-height: 42px;
+    font-size: 24px;
+    line-height: 38px;
     text-align: center;
     font-weight: 300;
     margin-bottom: 1rem;
+    width: 78%;
   }
 
   .vector-area {
@@ -422,16 +432,16 @@
   }
 
   .vector-img{
-    height: 200px;
+    height: 180px;
   }
 
   .button-outer {
-    width: 80%;
+    width: 75%;
   }
 
   .all-ads-button {
-    font-size: 20px;
-    height: 35px;
+    font-size: 18px;
+    height: 28px;
   }
 
   .serach-outer {
@@ -499,8 +509,13 @@
     height: 70%;
   }
 
-  .main-text{
-    font-weight: 450;
+  .main-text {
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    width: 84%;
   }
 
 }
