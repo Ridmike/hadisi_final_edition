@@ -1,231 +1,513 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-.main-outer{
+.main-outer {
+  /* border: 1px solid black; */
   width: 100%;
   height: 100%;
 }
 
-.sec-out{
-  /*border: solid 1px black;*/
-  margin: 2rem auto auto;
+.sec-out {
+  /* border: solid 1px black; */
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 0;
   display: flex;
   height: 90%;
-  width: 90%;
+  width: 80%;
+  -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
 }
 
-.content-outer{
-  /*border: solid 1px red;*/
-  align-content: center;
-  width: 50%;
+.content-outer {
+  /* border: solid 1px red; */
+  background: rgba(64, 193, 212, 1.0);
+  background: linear-gradient(315deg, rgba(64, 193, 212, 1.0), rgba(52, 107, 226, 1.0));
+  /* align-content: center; */
+  width: 40%;
   height: 100%;
   padding: 2rem;
 }
 
-.h-outer{
-  padding-bottom: 1rem;
+.h-outer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-txt {
+  /* border: 1px solid blue; */
+  margin: auto;
   font-size: 28px;
-  /* font-family: "Sanchez", serif; */
   font-weight: 600;
   letter-spacing: 2px;
 }
 
-.para-outer{
+.para-outer {
   font-size: 16px;
-  font-family: "Josefin Sans", sans-serif;
-  text-align: justify;
-  line-height: 2rem;
+  text-align: center;
   letter-spacing: 2px;
 }
 
-.img-outer{
+.img-outer {
   /*border: 1px solid black;*/
-  border-radius: 100%;
-  width: 60%;
+  width: 95%;
   margin: auto;
 }
 
-.main-outer-form{
-  /*border: solid 1px gold;*/
+.login-txt-outer {
+  width: auto;
+  height: auto;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.login-txt-outer p {
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.login-txt-outer button {
+  margin: auto;
+  width: 150px;
+  height: 30px;
+  transition: 0.2s;
+}
+
+.main-outer-form {
+  /* border: solid 1px gold; */
+  margin: auto;
+  margin-top: 70px;
   width: 50%;
   height: 100%;
 }
 
-.form-outer{
-  /*border: solid 1px blue;*/
-  width: 75%;
-  height: 80%;
+.form-outer {
+  /* border: solid 1px blue; */
+  width: 70%;
+  height: 78%;
   margin: auto;
   padding: 2rem;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-  border-radius: 10%;
+  -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
 }
 
-
-.logo-form-outer{
-  /*border: solid 1px black;*/
-  width: 30%;
-  height: 8%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
-
-.brand{
-  font-weight: bold;
-  font-size: 1.3rem;
-}
-
-.inner-logo{
-  display: flex;
-  align-items: center;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-}
-
-.logo-form-outer img {
-  width: 2.5rem;
-}
-
-.logo{
-  width: 30px;
-  height: 30px;
-  /*margin: auto;*/
-}
-
-.form-h{
-  /*text-align: center;*/
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 1000;
-}
-
-.reg-outer{
-  /*border: 1px solid red;*/
+.reg-outer {
+  /* border: 1px solid red; */
   margin-bottom: 1rem;
   /*margin-top: 2rem;*/
 }
 
-.email-outer{
+.email-outer {
   margin-bottom: 15px;
+  margin-left: 2px;
 }
 
-.email-input{
-  padding: 10px;
+.email-input {
+  padding: 12px;
 }
 
 
-.sign-outer{
-  margin: 3rem auto auto;
+.sign-outer {
+  margin: 3.5rem auto auto;
   width: 80%;
   height: 2.5rem;
 }
 
 @media (max-width: 1246px) {
-  .sec-out{
-    height: 90%;
+
+  .main-outer {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
   }
 
-  .content-outer{
+  .sec-out {
+    border: 1px solid black;
+    margin-top: 20px;
+    height: 95%;
+  }
+
+  .content-outer {
+    border: 1px solid red;
     padding: 1rem 1.4rem 1.4rem;
   }
 
-  .h-outer{
+  .h-outer {
     padding-bottom: 0.7rem;
     font-size: 24px;
-    letter-spacing:  0.094rem;
+    letter-spacing: 0.094rem;
   }
 
-  .para-outer{
+  .para-outer {
     font-size: 14px;
     line-height: 1.6rem;
     letter-spacing: 0.094rem;
   }
 
-  .img-outer{
-    width: 75%;
+  .img-outer {
+    width: 80%;
   }
 
-  .form-outer{
+  .login-txt-outer{
+    margin-top: 30px;
+  }
+
+  .main-outer-form{
+    margin-top: 50px;
+  }
+
+  .form-outer {
     height: auto;
+    margin: auto;
   }
 
-  .email-outer{
+  .email-outer {
     margin-bottom: 10px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1133px) {
+  .sec-out {
+    /* border: 1px solid black; */
+    margin-top: 45px;
+    height: 90%;
+  }
+
+  .content-outer {
+    /* border: 1px solid red; */
+    padding: 2rem 1.6rem 1.6rem;
+  }
+
+  .header-txt {
+    /* border: 1px solid blue; */
+    margin: auto;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .para-outer {
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .login-txt-outer p {
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+  }
+
+  .login-txt-outer button {
+    margin: auto;
+    width: 148px;
+    height: 28px;
+    transition: 0.2s;
+  }
+
+  .main-outer-form {
+    /* border: solid 1px gold; */
+    margin: auto;
+    display: flex;
+    /* margin-top: 30px; */
+    width: 50%;
+    height: fit-content;
+  }
+
   .form-outer{
+    width: 70%;
+    height: 45%;
+  }
+}
+
+@media (max-width: 1061px) {
+  .sec-out {
+    /* border: 1px solid black; */
+    margin-top: 45px;
+    height: 90%;
+  }
+
+  .content-outer {
+    /* border: 1px solid red; */
+    padding: 2rem 1.6rem 1.6rem;
+  }
+
+  .header-txt {
+    /* border: 1px solid blue; */
+    margin: auto;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .para-outer {
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .login-txt-outer p {
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    /* margin-bottom: 5px; */
+  }
+
+  .login-txt-outer button {
+    margin: auto;
+    width: 145px;
+    height: 25px;
+    transition: 0.2s;
+  }
+
+  .form-outer{
+    /* border: 1px solid red; */
+    width: 75%;
+    height: 450px;
+  }
+
+  .email-outer {
+    margin-bottom: 12px;
+    margin-left: 2px;
+    font-size: 14px;
+  }
+
+  .email-input {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .sign-outer {
+    margin: 2rem auto auto;
+    width: 65%;
+    height: 2.3rem;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .h-outer{
+    margin-top: 50px;
+  }
+
+  .sec-out{
+    width: 92%;
+  }
+
+  .form-outer {
     width: 82%;
   }
 
-  .logo-form-outer{
+  .logo-form-outer {
     width: 40%;
   }
 }
 
 @media (max-width: 900px) {
+  .sec-out {
+    width: 92%
+  }
+}
+
+@media (max-width: 842px) {
   .sec-out{
-    width: 96%
+    width: 98%;
+  }
+
+  .h-outer{
+    margin-top: 50px;
+  }
+
+  .header-txt {
+    /* border: 1px solid blue; */
+    margin: auto;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .para-outer {
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .login-txt-outer p {
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    /* margin-bottom: 5px; */
+  }
+
+  .login-txt-outer button {
+    margin: auto;
+    width: 100px;
+    height: 25px;
+    transition: 0.2s;
+    font-size: 11px;
+  }
+
+  .email-outer {
+    margin-bottom: 12px;
+    margin-left: 2px;
+    font-size: 12px;
+  }
+
+  .email-input {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .sign-outer {
+    margin: 2rem auto auto;
+    width: 65%;
+    height: 2.3rem;
   }
 }
 
 @media (max-width: 700px) {
+
   .main-outer{
+    /* border: 1px solid black; */
     height: auto;
-    margin-bottom: 4rem;
   }
 
-  .sec-out{
-    flex-direction: column;
-  }
-
-  .content-outer{
+  .sec-out {
+    /* border: solid 1px black; */
     width: 100%;
-    height: auto;
-  }
-
-  .mob-outer{
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    margin-top: 0;
   }
 
-  .img-outer{
-    /*align-self: center;*/
-    width: 40%;
-    /*height: 30%;*/
+  .content-outer {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .h-outer {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header-txt {
+    /* border: 1px solid blue; */
+    margin: auto;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .para-outer {
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .img-outer {
+    /*border: 1px solid black;*/
+    width: 75%;
     margin: auto;
   }
 
-  .para-outer{
-    width: 50%
-  }
-
-  .main-outer-form{
-    width: 80%;
+  .login-txt-outer {
+    width: auto;
     height: auto;
-    margin: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
   }
+
+  .login-txt-outer p {
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+
+  .login-txt-outer button {
+    margin: auto;
+    font-size: 14px;
+    letter-spacing: 2px;
+    width: 150px;
+    height: 30px;
+    transition: 0.2s;
+  }
+
+  .main-outer-form {
+    /* border: solid 1px gold; */
+    margin: auto;
+    margin-top: 25px;
+    width: 90%;
+    height: 90%;
+    margin-bottom: 30px;
+  }
+
+  .form-outer {
+    /* border: solid 1px blue; */
+    width: 70%;
+    height: 78%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 15px;
+  }
+
+  .reg-outer {
+    /* border: 1px solid red; */
+    margin-bottom: 1rem;
+    /*margin-top: 2rem;*/
+  }
+
+  .email-outer {
+    margin-bottom: 15px;
+    margin-left: 2px;
+    font-size: 15px;
+  }
+
+  .email-input {
+    padding: 12px;
+  }
+
+
+  .sign-outer {
+    margin: 3rem auto auto;
+    width: 60%;
+    height: 2.3rem;
+    font-size: 14px;
+  }
+
 }
 
 @media (max-width: 500px) {
 
-  .form-outer{
+  .form-outer {
     width: 90%;
   }
 
-  .content-outer{
+  .content-outer {
     height: auto;
   }
 
-  .main-outer-form{
+  .main-outer-form {
     height: auto;
     width: 100%
   }
