@@ -133,13 +133,13 @@
   }
 
   .sec-out {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     margin-top: 20px;
     height: 95%;
   }
 
   .content-outer {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     padding: 1rem 1.4rem 1.4rem;
   }
 
