@@ -1,5 +1,6 @@
 export interface CategoriesModal{
   id:number;
+  img: string;                     //----------------this is home category img-----------------------
   section:string;
   subCats:Array<SubCategories>
 }

@@ -8,6 +8,7 @@ export interface PostModal{
   shortDescription:string;
   price:number;
   category:SubCategories
+  img:string;                    //----------------this is home category img-----------------------
   section:CategoriesModal;
   contactNumbers:number[]
 }
