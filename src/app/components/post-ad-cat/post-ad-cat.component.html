@@ -9,16 +9,26 @@
           <hr>
         </div>
         <div class="accordion-wrapper">
-          <p-accordion [activeIndex]="">
-            <div class="accordion-grid">
-              <p-accordionTab [header]="category.section" *ngFor="let category of catList">
-                <div class="content" *ngFor="let subCat of category.subCats">
-                  <input type="checkbox" name="'checkCategory-'+{{category.id + subCat.subId}}" id="'checkCategory-'+{{category.id + subCat.subId}}" class="cursor-pointer ml-10">
-                  <label class="cursor-pointer" for="'checkCategory-'+{{category.id + subCat.subId}}">{{subCat.subCatName}}</label>
+          <div class="accordion-grid" >
+            <div *ngFor="let category of catList">
+              <div class="accordion-tab" (click)="toggleAccordion(category.id)">
+                {{category.section}}
+                <div class="arrow" [ngClass]="{'rotate-down': isActive(category.id)}">
+                  <img width="20" height="20" src="https://img.icons8.com/material-rounded/24/000000/more-than.png" alt="more-than"/>
                 </div>
-              </p-accordionTab>
+              </div>
+              <div *ngIf="isActive(category.id)" class="content show">
+                <div *ngFor="let subCat of category.subCats" class="inner-content">
+                  <div class="input-container">
+                    <input type="checkbox" [id]="'checkCategory-' + category.id + '-' + subCat.subId" class="cursor-pointer ml-10">
+                  </div>
+                  <div class="label-container">
+                    <label class="cursor-pointer" [for]="'checkCategory-' + category.id + '-' + subCat.subId">{{subCat.subCatName}}</label>
+                  </div>
+                </div>
+              </div>
             </div>
-          </p-accordion>
+          </div>
         </div>
 
         <div class="next-button">

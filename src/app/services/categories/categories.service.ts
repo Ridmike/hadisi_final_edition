@@ -13,134 +13,146 @@ export class CategoriesService{
   tempCategories: Array<CategoriesModal> = [
     {
       id: 1,
-      section: "Administrative",
+      img: "/icons/car.png",    //----------------this is home category img-----------------------
+      section: "VEHICLE",
       subCats: [
-        { subId: 101, subCatName: "Receptionist" },
-        { subId: 102, subCatName: "Office Clerk" },
-        { subId: 103, subCatName: "Data Entry Clerk" },
-        { subId: 104, subCatName: "Executive Assistant" },
-        { subId: 105, subCatName: "Administrative Assistant" }
+        { subId: 101, subCatName: "Car" },
+        { subId: 102, subCatName: "Van" },
+        { subId: 103, subCatName: "Motorbike" },
+        { subId: 104, subCatName: "Truck" },
+        { subId: 105, subCatName: "Bicycle" }
       ]
     },
     {
       id: 2,
-      section: "Healthcare",
+      img: "/icons/responsive.png",        //----------------this is home category img-----------------------
+      section: "ElECTRONIC",
       subCats: [
-        { subId: 201, subCatName: "Nurse" },
-        { subId: 202, subCatName: "Medical Assistant" },
-        { subId: 203, subCatName: "Pharmacy Technician" },
-        { subId: 204, subCatName: "Lab Technician" },
-        { subId: 205, subCatName: "Dental Assistant" }
+        { subId: 201, subCatName: "Mobile Phones" },
+        { subId: 202, subCatName: "Computers" },
+        { subId: 203, subCatName: "Audio Equipments" },
+        { subId: 204, subCatName: "Home Appliances" },
+        { subId: 205, subCatName: "Televisions" }
       ]
     },
     {
       id: 3,
-      section: "IT & Technology",
+      img: "/icons/town.png",           //----------------this is home category img-----------------------
+      section: "PROPERTY",
       subCats: [
-        { subId: 301, subCatName: "Software Developer" },
-        { subId: 302, subCatName: "System Analyst" },
-        { subId: 303, subCatName: "IT Support Specialist" },
-        { subId: 304, subCatName: "Network Administrator" },
-        { subId: 305, subCatName: "Database Administrator" }
+        { subId: 301, subCatName: "Residential Properties" },
+        { subId: 302, subCatName: "Land" },
+        { subId: 303, subCatName: "Recreational Properties" },
+        { subId: 304, subCatName: "Commercial Properties" },
+        { subId: 305, subCatName: "Agricultural Properties" }
       ]
     },
     {
       id: 4,
-      section: "Customer Service",
+      img: "/icons/education.png",            //----------------this is home category img-----------------------
+      section: "EDUCATION",
       subCats: [
-        { subId: 401, subCatName: "Call Center Representative" },
-        { subId: 402, subCatName: "Customer Support Specialist" },
-        { subId: 403, subCatName: "Technical Support Representative" },
-        { subId: 404, subCatName: "Client Service Coordinator" },
-        { subId: 405, subCatName: "Help Desk Technician" }
+        { subId: 401, subCatName: "Online Education" },
+        { subId: 402, subCatName: "Vocational and Technical Education" },
+        { subId: 403, subCatName: "Arts Education" },
+        { subId: 404, subCatName: "Homeschooling" },
+        { subId: 405, subCatName: "Primary Education" }
       ]
     },
     {
       id: 5,
-      section: "Finance",
+      img: "/icons/grocery.png",       //----------------this is home category img-----------------------
+      section: "GROCERY",
       subCats: [
-        { subId: 501, subCatName: "Accountant" },
-        { subId: 502, subCatName: "Financial Analyst" },
-        { subId: 503, subCatName: "Bookkeeper" },
-        { subId: 504, subCatName: "Payroll Specialist" },
-        { subId: 505, subCatName: "Auditor" }
+        { subId: 501, subCatName: "Bakery Items" },
+        { subId: 502, subCatName: "Dairy Products" },
+        { subId: 503, subCatName: "Pantry Staples" },
+        { subId: 504, subCatName: "Personal Care" },
+        { subId: 505, subCatName: "Household Essentials" }
       ]
     },
     {
       id: 6,
-      section: "Human Resources",
+      img: "/icons/old.png",          //----------------this is home category img-----------------------
+      section: "CAREGIVING",
       subCats: [
-        { subId: 601, subCatName: "HR Coordinator" },
-        { subId: 602, subCatName: "Recruiter" },
-        { subId: 603, subCatName: "HR Assistant" },
-        { subId: 604, subCatName: "Benefits Administrator" },
-        { subId: 605, subCatName: "Training Coordinator" }
+        { subId: 601, subCatName: "Elderly Care" },
+        { subId: 602, subCatName: "Child Care" },
+        { subId: 603, subCatName: "Disability Care" },
+        { subId: 604, subCatName: "Mental Health Support" },
+        { subId: 605, subCatName: "Specialized Care" }
       ]
     },
     {
       id: 7,
-      section: "Education",
+      img: "/icons/construction-worker.png",              //----------------this is home category img-----------------------
+      section: "WORKERS",
       subCats: [
         { subId: 701, subCatName: "Substitute Teacher" },
-        { subId: 702, subCatName: "Teacher Assistant" },
+        { subId: 702, subCatName: "Plumber" },
         { subId: 703, subCatName: "Tutor" },
         { subId: 704, subCatName: "School Counselor" },
-        { subId: 705, subCatName: "Librarian" }
+        { subId: 705, subCatName: "Electrician" }
       ]
     },
     {
       id: 8,
-      section: "Manufacturing",
+      img: "/icons/delivery-truck.png",           //----------------this is home category img-----------------------
+      section: "TRANSPORT",
       subCats: [
-        { subId: 801, subCatName: "Assembler" },
-        { subId: 802, subCatName: "Machinist" },
-        { subId: 803, subCatName: "Quality Control Inspector" },
-        { subId: 804, subCatName: "Production Worker" },
-        { subId: 805, subCatName: "Packaging Operator" }
+        { subId: 801, subCatName: "Logistics and Freight" },
+        { subId: 802, subCatName: "Tourist and Leisure Transport" },
+        { subId: 803, subCatName: "Emergency and Critical Transport" },
+        { subId: 804, subCatName: "Sustainable Transport" },
+        { subId: 805, subCatName: "Car Rentals" }
       ]
     },
     {
       id: 9,
-      section: "Hospitality",
+      img: "/icons/makeup.png",           //----------------this is home category img-----------------------
+      section: "BEAUTY CARE",
       subCats: [
-        { subId: 901, subCatName: "Housekeeper" },
-        { subId: 902, subCatName: "Event Staff" },
-        { subId: 903, subCatName: "Catering Assistant" },
-        { subId: 904, subCatName: "Front Desk Agent" },
-        { subId: 905, subCatName: "Concierge" }
+        { subId: 901, subCatName: "Skin Care" },
+        { subId: 902, subCatName: "Hair Care" },
+        { subId: 903, subCatName: "Makeup" },
+        { subId: 904, subCatName: "Fragrances" },
+        { subId: 905, subCatName: "Men’s Grooming" }
       ]
     },
     {
       id: 10,
-      section: "Retail",
+      img: "/icons/stock.png",                //----------------this is home category img-----------------------
+      section: "FINANCIAL",
       subCats: [
-        { subId: 1001, subCatName: "Sales Associate" },
-        { subId: 1002, subCatName: "Cashier" },
-        { subId: 1003, subCatName: "Stock Clerk" },
-        { subId: 1004, subCatName: "Store Manager" },
-        { subId: 1005, subCatName: "Merchandiser" }
+        { subId: 1001, subCatName: "Investments" },
+        { subId: 1002, subCatName: "Insurance" },
+        { subId: 1003, subCatName: "Retirement Planning" },
+        { subId: 1004, subCatName: "Business Finance" },
+        { subId: 1005, subCatName: "Consumer Finance" }
       ]
     },
     {
       id: 11,
-      section: "Logistics",
+      img: "/icons/placeholder.png",                 //----------------this is home category img-----------------------
+      section: "EMERGENCY",
       subCats: [
-        { subId: 1101, subCatName: "Warehouse Worker" },
-        { subId: 1102, subCatName: "Delivery Driver" },
-        { subId: 1103, subCatName: "Forklift Operator" },
-        { subId: 1104, subCatName: "Shipping Clerk" },
-        { subId: 1105, subCatName: "Inventory Specialist" }
+        { subId: 1101, subCatName: "Travel Emergencies" },
+        { subId: 1102, subCatName: "Ambulance Services" },
+        { subId: 1103, subCatName: "Home Security Systems" },
+        { subId: 1104, subCatName: "Urgent Care" },
+        { subId: 1105, subCatName: "Water Supply Issues" }
       ]
     },
     {
       id: 12,
-      section: "Construction",
+      img: "/icons/more.png",             //----------------this is home category img-----------------------
+      section: "OTHER",
       subCats: [
-        { subId: 1201, subCatName: "Laborer" },
-        { subId: 1202, subCatName: "Carpenter" },
-        { subId: 1203, subCatName: "Electrician" },
-        { subId: 1204, subCatName: "Plumber" },
-        { subId: 1205, subCatName: "Painter" }
+        { subId: 1201, subCatName: "Event Planning" },
+        { subId: 1202, subCatName: "Environmental Services" },
+        { subId: 1203, subCatName: "Creative Services" },
+        { subId: 1204, subCatName: "Technology Services bn" },
+        { subId: 1205, subCatName: "Home Services" }
       ]
     }
   ];

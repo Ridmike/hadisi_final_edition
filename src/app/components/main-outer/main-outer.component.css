@@ -5,7 +5,7 @@
 .all-outer{
   padding-left: 15px;
   padding-right: 15px;
-  width: 80%;
+  max-width: 1270px;
   display: flex;
   justify-content: space-between;
   /*border: 1px solid black;*/
@@ -51,7 +51,7 @@
 .cat-sec{
   /*border: #FFDB00 1px solid;*/
   height: auto;
-  width: 15%;
+  width: auto;
   /*margin-left: 0.5rem;*/
   display: flex;
   align-items: center;
@@ -64,7 +64,8 @@
 }
 
 .location-sec{
-  width: 15%;
+  /*border: #FFDB00 1px solid;*/
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,5 +109,24 @@
 
   .all-outer{
     margin-top: 8px;
+  }
+
+  .cat-sec{
+    margin-left: 2rem;
+  }
+
+  .location-sec{
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .cat-sec{
+    margin-left: 1.2rem;
+  }
+
+  .location-sec{
+    margin-right: 1.2rem;
   }
 }
