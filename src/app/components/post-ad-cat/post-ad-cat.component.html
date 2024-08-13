@@ -19,8 +19,12 @@
               </div>
               <div *ngIf="isActive(category.id)" class="content show">
                 <div *ngFor="let subCat of category.subCats" class="inner-content">
-                  <input type="checkbox" [id]="'checkCategory-' + category.id + '-' + subCat.subId" class="cursor-pointer ml-10">
-                  <label class="cursor-pointer" [for]="'checkCategory-' + category.id + '-' + subCat.subId">{{subCat.subCatName}}</label>
+                  <div class="input-container">
+                    <input type="checkbox" [id]="'checkCategory-' + category.id + '-' + subCat.subId" class="cursor-pointer ml-10">
+                  </div>
+                  <div class="label-container">
+                    <label class="cursor-pointer" [for]="'checkCategory-' + category.id + '-' + subCat.subId">{{subCat.subCatName}}</label>
+                  </div>
                 </div>
               </div>
             </div>
