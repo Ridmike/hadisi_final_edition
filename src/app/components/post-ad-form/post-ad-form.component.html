@@ -1,7 +1,7 @@
 <app-header></app-header>
 <div>
   <div class="outer-layer">
-    <div class="inner-layer">
+    <div class="inner-layer  border-2 border-red-600">
       <p-stepper [linear]="true">
         <p-stepperPanel header="Personal">
           <ng-template pTemplate="content" let-nextCallback="nextCallback" let-index="index">
@@ -46,11 +46,11 @@
             </div>
           </ng-template>
         </p-stepperPanel>
-        <p-stepperPanel header="Post Details">
+        <p-stepperPanel header="About Post">
           <ng-template pTemplate="content" let-prevCallback="prevCallback" let-nextCallback="nextCallback" let-index="index">
             <div class="flex flex-column h-12rem">
               <div class="post-inner surface-border border-round surface-ground justify-content-center align-items-center font-medium">
-                <div class="title-outer">
+                <div class="title-outer border-2 border-red-500">
                   <label for="default-input" class="block mb-2 text-sm font-medium text-gray-900">Title</label>
                   <input type="text" id="title-input" placeholder="Title*" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 </div>
@@ -64,11 +64,11 @@
                 <div class="condition-outer">
                   <p class="condition-text mb-1 block text-sm font-medium text-gray-900">Condition</p>
                   <div class="condition-inner">
-                    <div class="flex items-center w-60 mr-10 ps-4 border border-gray-200 rounded dark:border-gray-300">
+                    <div class="flex items-center my-2 w-60 mr-10 ps-4 border border-gray-200 rounded dark:border-gray-300">
                       <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                       <label for="bordered-radio-1" class="w-full py-4 ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">Brand New</label>
                     </div>
-                    <div class="flex items-center w-60 ps-4 border border-gray-200 rounded dark:border-gray-300">
+                    <div class="flex items-center my-2 w-60 ps-4 border border-gray-200 rounded dark:border-gray-300">
                       <input checked id="bordered-radio-2" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                       <label for="bordered-radio-2" class="w-full py-4 ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">Used</label>
                     </div>

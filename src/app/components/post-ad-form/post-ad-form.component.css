@@ -10,7 +10,7 @@ body {
 
 .outer-layer {
   width: 100%;
-  /*border: 1px solid red;*/
+  /* border: 1px solid red; */
   height: auto;
   margin: 0;
   padding: 3rem;
@@ -92,20 +92,20 @@ body {
   margin: auto;
   margin-top: 2rem;
   /*border: 1px solid red;*/
-  width: 50rem;
+  width: 100%;
 }
 
 .desc-outer {
   margin: auto;
   margin-top: 2rem;
   /*border: 1px solid purple;*/
-  width: 50rem;
+  width: 100%;
   height: 10rem;
 
 }
 
 .condition-inner {
-  /*border: 1px solid brown;*/
+  /* border: 1px solid brown; */
   width: 50rem;
   height: auto;
   display: flex;
@@ -135,4 +135,46 @@ body {
   /*border: 1px solid black;*/
   width: 95%;
   height: auto;
+}
+
+@media (max-width: 800px) {
+  
+  .name-input{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .phone-address{
+    flex-direction: column;
+  }
+
+  .name-outer{
+    width: 70%;
+  }
+
+  .phone-outer{
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+
+  .address-outer{
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  
+  .outer-layer{
+    padding: 1.5rem;
+  }
+
+  .inner-layer{
+    width: 100%;
+  }
+
+  .condition-inner{
+    flex-direction: column;
+  }
+
 }
