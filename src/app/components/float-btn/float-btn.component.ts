@@ -17,7 +17,7 @@ export class FloatBtnComponent {
   }
 
   startCat() {
-    this.route.navigate(['/add'])
+    this.route.navigate(['/cat'])
   }
 
 }
