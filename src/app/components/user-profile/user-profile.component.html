@@ -1,0 +1,38 @@
+<div class="main-outer">
+    <div class="detail-sec-outer">
+        <p class="text-center">
+            Profile
+        </p>
+        <div class="detail-sec" *ngFor="let data of userData">
+            <div class="profile">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Profile Picture" class="prof-pic">
+            </div>
+            <div class="details">
+                <div class="details-outer">
+                    <div class=" field-outer">
+                        <p class="d-text">Name :<span><input type="text" placeholder="{{data.name}}" /></span></p>
+                        <p class="d-text">Email :<span><input type="text" placeholder="{{data.email}}" /></span></p>
+                    </div>
+                    <div class=" field-outer">
+                        <p class="d-text">Mobile :<span><input type="text" placeholder="{{data.password}}Location" /></span></p>
+                        <p class="d-text">Location :<span><input type="text" placeholder="{{data.confirmpassword}}"/></span></p>
+                    </div>
+                    <div class="btn-outer">
+                        <button type="submit">Update Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">About Your Ads</p>
+        <div class="ads-outer">
+            <div class="ad">
+                <div class="ad-img">
+                    
+                </div>
+                <div class="ad-dis-sec">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

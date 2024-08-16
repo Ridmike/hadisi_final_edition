@@ -17,7 +17,14 @@ export class UserService {
       password: "123456",
       name: "test",
       confirmpassword: "123456"
-    }
+    },
+
+    // {
+    //   email: "t@gmail.com",
+    //   password: "123456",
+    //   name: "t",
+    //   confirmpassword: "123456"
+    // }
   ]
 
   isLoggedIn(): boolean {

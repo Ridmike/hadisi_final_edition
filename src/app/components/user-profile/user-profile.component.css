@@ -1,0 +1,94 @@
+.main-outer{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+
+.detail-sec-outer{
+    width: 90%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.detail-sec{
+    width: 90%;
+    height: auto;
+    border: 1px solid red;
+    display: flex;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.profile{
+    border: 1px solid black;
+    height: auto;
+}
+
+.prof-pic{
+    border: 1px black solid;
+    width: 15rem;
+    border-radius: 100%;
+}
+
+.details{
+    border: 1px solid black;
+    width: 70%;
+    height: auto;
+}
+
+.details-outer{
+    border: 1px solid red;
+    width: 80%;
+    margin: auto;
+}
+
+.d-text{
+    font-size: 14px;
+    margin-bottom: 1rem;
+    width: 50%;
+}
+
+.btn-outer{
+    border: 1px solid black;
+    margin-top: 3rem;
+}
+
+.field-outer{
+    /* border: 1px solid black; */
+    display: flex;
+    height: auto;
+}
+
+.field-outer span {
+    margin-left: 2rem;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.ads-outer{
+    width: 90%;
+    height: auto;
+    border: 1px solid red;
+    margin: auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+}
+
+.ad{
+    height: 150px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.ad-img{
+    width: 40%;
+}
+
+.ad-dis-sec{
+    width: 60%;
+}
