@@ -1,7 +1,7 @@
 <div class="main-outer">
     <div class="detail-sec-outer">
-        <p class="text-center">
-            Profile
+        <p class="text-center text-2xl font-medium">
+            Profile Details
         </p>
         <div class="detail-sec" *ngFor="let data of userData">
             <div class="profile">
@@ -14,8 +14,8 @@
                         <p class="d-text">Email :<span><input type="text" placeholder="{{data.email}}" /></span></p>
                     </div>
                     <div class=" field-outer">
-                        <p class="d-text">Mobile :<span><input type="text" placeholder="{{data.password}}Location" /></span></p>
-                        <p class="d-text">Location :<span><input type="text" placeholder="{{data.confirmpassword}}"/></span></p>
+                        <p class="d-text">Mobile :<span><input type="text" placeholder="Mobile" /></span></p>
+                        <p class="d-text">Location :<span><input type="text" placeholder="Location"/></span></p>
                     </div>
                     <div class="btn-outer">
                         <button type="submit">Update Details</button>
@@ -23,7 +23,7 @@
                 </div>
             </div>
         </div>
-        <p class="text-center">About Your Ads</p>
+        <p class="text-center text-2xl font-medium">About Your Ads</p>
         <div class="ads-outer">
             <div class="ad">
                 <div class="ad-img">

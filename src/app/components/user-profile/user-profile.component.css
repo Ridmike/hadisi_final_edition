@@ -19,7 +19,7 @@
     display: flex;
     margin: auto;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     justify-content: center;
 }
 
@@ -44,17 +44,13 @@
     border: 1px solid red;
     width: 80%;
     margin: auto;
+    padding: 1rem;
 }
 
 .d-text{
     font-size: 14px;
     margin-bottom: 1rem;
     width: 50%;
-}
-
-.btn-outer{
-    border: 1px solid black;
-    margin-top: 3rem;
 }
 
 .field-outer{
@@ -67,6 +63,23 @@
     margin-left: 2rem;
     font-size: 16px;
     font-weight: 500;
+}
+
+.field-outer input{
+    padding-left: 5px;
+}
+
+.btn-outer{
+    border: 1px solid black;
+    height: auto;
+    width: max-content;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 0.5rem;
+}
+
+.btn-outer button{
+    font-size: 16px;
 }
 
 .ads-outer{
