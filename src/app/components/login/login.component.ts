@@ -52,7 +52,7 @@ export class LoginComponent implements OnInit {
   }
 
 
-  login(email: string, password: string) {
+  islogin(email: string, password: string) {
     this.visible = this.userService.userlogin(email, password)
   }
 

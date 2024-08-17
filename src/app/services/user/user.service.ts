@@ -43,7 +43,7 @@ export class UserService {
     if (user) {
       this.userLoggedIn == true;
 
-      this.router.navigate(['/register']).then(()=>console.log("Loggin Succesful"));
+      this.router.navigate(['/ads']).then(()=>console.log("Loggin Succesful"));
       return true;
     }
     return false;
