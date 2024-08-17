@@ -1,3 +1,4 @@
+<app-header></app-header>
 <div class="main-outer">
     <div class="detail-sec-outer">
         <p class="text-center text-2xl font-medium">
@@ -5,7 +6,7 @@
         </p>
         <div class="detail-sec" *ngFor="let data of userData">
             <div class="profile">
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Profile Picture" class="prof-pic">
+                <img src="https://www.transparentpng.com/download/user/gray-user-profile-icon-png-fP8Q1P.png" alt="user-male-circle" class="prof-pic"/>
             </div>
             <div class="details">
                 <div class="details-outer">
@@ -18,7 +19,10 @@
                         <p class="d-text">Location :<span><input type="text" placeholder="Location"/></span></p>
                     </div>
                     <div class="btn-outer">
-                        <button type="submit">Update Details</button>
+                      <button type="button" class=" text-white bg-gray-800
+                         hover:bg-gray-900  font-medium rounded-lg text-sm
+                          px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700
+                           dark:focus:ring-gray-700 dark:border-gray-700" (click)="openPopup()">Update Details</button>
                     </div>
                 </div>
             </div>
@@ -26,13 +30,71 @@
         <p class="text-center text-2xl font-medium">About Your Ads</p>
         <div class="ads-outer">
             <div class="ad">
-                <div class="ad-img">
-                    
-                </div>
-                <div class="ad-dis-sec">
-                    
-                </div>
+                <div class="ad-img"></div>
+                <div class="ad-dis-sec"></div>
+            </div>
+            <div class="ad">
+                <div class="ad-img"></div>
+                <div class="ad-dis-sec"></div>
+            </div>
+            <div class="ad">
+                <div class="ad-img"></div>
+                <div class="ad-dis-sec"></div>
             </div>
         </div>
     </div>
 </div>
+<!--popup window content-->
+
+<div class="popUp-outer" *ngIf="isPopupVisible">
+  <div class="popUp-inner-layer">
+    <form class="popUp-form-outer">
+      <div class="input-outers">
+        <label for="name-input" class="block mb-2 font-medium text-gray-900">Enter your name</label>
+        <input type="text" id="name-input" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block p-2.5 dark:placeholder-gray-400" placeholder="Full Name">
+      </div>
+      <div class="input-outers">
+        <label for="location-input" class="block mb-2 font-medium text-gray-900">Address</label>
+        <input type="text" id="location-input" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block p-2.5 dark:placeholder-gray-400" placeholder="Address">
+      </div>
+      <div class="input-outers">
+        <label for="phone-input" class="block mb-2 font-medium text-gray-900">Mobile</label>
+        <div class="relative">
+          <div class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 19 18">
+              <path d="M18 13.446a3.02 3.02 0 0 0-.946-1.985l-1.4-1.4a3.054 3.054 0 0 0-4.218 0l-.7.7a.983.983 0 0 1-1.39 0l-2.1-2.1a.983.983 0 0 1 0-1.389l.7-.7a2.98 2.98 0 0 0 0-4.217l-1.4-1.4a2.824 2.824 0 0 0-4.218 0c-3.619 3.619-3 8.229 1.752 12.979C6.785 16.639 9.45 18 11.912 18a7.175 7.175 0 0 0 5.139-2.325A2.9 2.9 0 0 0 18 13.446Z"/>
+            </svg>
+          </div>
+          <input type="text" id="phone-input" aria-describedby="helper-text-explanation"
+                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+                 focus:ring-blue-500 focus:border-blue-500 block ps-10 p-2.5 dark:placeholder-gray-400 " pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+943-456-7890" required />
+        </div>
+      </div>
+      <div class="input-outers">
+        <div class="file-up-outer">
+          <label class="block mb-2 font-medium text-gray-900">Upload profile picture</label>
+          <div class="card-outer">
+            <div class="flex items-center justify-center w-full">
+              <label for="dropzone-file" class="flex flex-col items-center justify-center w-full
+               h-32 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800  hover:bg-gray-100">
+                <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                  <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
+                  </svg>
+                  <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+                  <p class="text-xs text-gray-500 dark:text-gray-400">PNG or JPG only (MAX. 800x400px)</p>
+                </div>
+                <input id="dropzone-file" type="file" class="hidden" />
+              </label>
+            </div>
+            <button type="button" class="mt-6 text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 ">Add</button>
+          </div>
+        </div>
+      </div>
+      <button id="submit-btn" type="button" class="mt-4 text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700" (click)="closePopup()">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!--popup window content-->
+<app-footer></app-footer>

@@ -3,10 +3,10 @@
 }
 
 .header-nav-outer{
-  display: none; /* hidden */
-  width: 100%; /* w-full */
-  align-items: center; /* items-center */
-  justify-content: space-between; /* justify-between */
+  display: none;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo{
