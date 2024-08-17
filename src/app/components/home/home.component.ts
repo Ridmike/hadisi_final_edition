@@ -24,4 +24,7 @@ export class HomeComponent {
 
   catHome = this.homeCategories.tempCategories               //----------------this is home category section-----------------------
 
+
+
+
 }
