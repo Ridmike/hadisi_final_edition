@@ -11,5 +11,6 @@ export const routes: Routes = [
   {path:'about',loadComponent:()=>import('./components/about/about.component').then(c=>c.AboutComponent)},
   {path:'contactus',loadComponent:()=>import('./components/contact-us/contact-us.component').then(c=>c.ContactUsComponent)},
   {path:'float',loadComponent:()=>import('./components/float-btn/float-btn.component').then(c=>c.FloatBtnComponent)},  
-  {path:'profile',loadComponent:()=>import('./components/user-profile/user-profile.component').then(c=>c.UserProfileComponent)}
+  {path:'profile',loadComponent:()=>import('./components/user-profile/user-profile.component').then(c=>c.UserProfileComponent)},
+  {path:'admin',loadComponent:()=>import('./components/admin/admin.component').then(c=>c.AdminComponent)}
 ];
