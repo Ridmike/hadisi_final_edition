@@ -13,5 +13,8 @@ export const routes: Routes = [
   {path:'float',loadComponent:()=>import('./components/float-btn/float-btn.component').then(c=>c.FloatBtnComponent)},
   {path:'profile',loadComponent:()=>import('./components/user-profile/user-profile.component').then(c=>c.UserProfileComponent)},
   {path:'admin',loadComponent:()=>import('./components/admin/admin.component').then(c=>c.AdminComponent)},
-  {path:'side',loadComponent:()=>import('./components/admin-side-panel/admin-side-panel.component').then(c=>c.AdminSidePanelComponent)}
+  {path:'side',loadComponent:()=>import('./components/admin-side-panel/admin-side-panel.component').then(c=>c.AdminSidePanelComponent)},
+  {path:'admin-user',loadComponent:()=>import('./components/admin-users/admin-users.component').then(c=>c.AdminUsersComponent)},
+  {path:'admin-posts',loadComponent:()=>import('./components/admin-posts/admin-posts.component').then(c=>c.AdminPostsComponent)},
+  {path:'admin-cat',loadComponent:()=>import('./components/admin-cat/admin-cat.component').then(c=>c.AdminCatComponent)}
 ];
