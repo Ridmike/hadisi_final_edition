@@ -160,4 +160,19 @@ export class CategoriesService{
   constructor() {
   }
 
+  getCatsMini(): Promise<any[]> {
+    return new Promise((resolve) => {
+      // Simulate an API call or data processing
+      const miniCats = this.tempCategories.map(cat => ({
+        code: cat.id,
+        name: cat.section,
+        category: cat.section,
+        quantity: cat.subCats.length,
+        inventoryStatus: 'INSTOCK', // example status
+        rating: Math.floor(Math.random() * 5) + 1
+      }));
+      resolve(miniCats);
+    });
+  }
+
 }

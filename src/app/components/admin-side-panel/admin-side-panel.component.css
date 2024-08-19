@@ -1,11 +1,12 @@
 .main-outer{
   /* border: 1px solid black; */
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   background: rgba(64, 193, 212, 1.0);
   background: linear-gradient(315deg, rgba(64, 193, 212, 1.0), rgba(52, 107, 226, 1.0));
+  /*border: 1px solid black;*/
 }
 
 .sec-outer{
@@ -13,7 +14,7 @@
   margin-top: 0.7rem;
   margin-bottom: 1.5rem;
   width: 95%;
-  height: 4.7rem;  
+  height: 4.7rem;
   cursor: pointer;
 
   /*border: 1px solid black;*/
@@ -28,7 +29,7 @@
   border-radius: 10px;
   color: white;
   font-weight: 600;
-  text-shadow: 2px 2px 2px rgba(162, 162, 162, 0.76);
+  text-shadow: 1.5px 1.5px 1.5px rgba(161, 161, 161, 0.76);
   letter-spacing: 2px;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
@@ -54,10 +55,15 @@
 }
 
 .side-panel-title p{
-  font-size: 20px;
-  letter-spacing: 2px;
+  font-size: 25px;
+  letter-spacing: 2.5px;
   color: rgb(48, 46, 46);
   font-weight: 600;
   margin: auto;
   text-align: center;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1.5px 1.5px 1.5px rgba(161, 161, 161, 0.76);
 }

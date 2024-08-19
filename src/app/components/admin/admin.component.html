@@ -4,7 +4,93 @@
     </div>
     <div class="main-area">
         <div class="main-inner">
-            <div class="header-title-outer"></div>
+            <div class="header-title-outer">
+                <p>DASHBOARD</p>
+            </div>
+            <div class="top-dataCard-outer">
+                <div class="data-card" id="top-card-1">
+                    <p>Overall visitors</p>
+                    <h1>15,000</h1>
+                    <span class="indicator">+11.05%</span>
+                    <span>Engage for the last 7 days from 5,000 Visitor to 7,800 Visitor.</span>
+                    <span>1,500 today</span>
+                    <div class="progress-bar">
+                        <div class="progress-bar-inner" ></div>
+                    </div>
+                </div>
+                <div class="data-card" id="top-card-2">
+                    <p>Total Registrations</p>
+                    <h1>8,000</h1>
+                    <span class="indicator">+8.2%</span>
+                    <span>Increased total registrations by 800 in the last 7 days</span>
+                    <br>
+                    <div class="progress-bar">
+                        <div class="progress-bar-inner"></div>
+                    </div>
+                </div>
+                <div class="data-card" id="top-card-3">
+                    <p>Memberships</p>
+                    <h1>600</h1>
+                    <span class="indicator">+130</span>
+                    <span>Memberships increased for the last 7 days from 10.2% to 15.7%</span>
+                    <span>30 today</span>
+                    <div class="progress-bar">
+                        <div class="progress-bar-inner"></div>
+                    </div>
+                </div>
+            </div>
+          <div class="middle-charts-outer">
+            <div class="post-chart-outer">
+              <p-chart type="bar" [data]="data" [options]="options" />
+            </div>
+            <div class="member-chart-outer">
+              <p-chart type="doughnut" [data]="data" [options]="options" />
+            </div>
+          </div>
+          <div class="table-area-outer">
+            <div class="table-header-txt">
+              <p>Check your live stock from here</p>
+            </div>
+
+            <div class="table-outer">
+              <div class="card">
+                <p-table [value]="products" [tableStyle]="{'min-width': '50rem'}">
+                  <ng-template pTemplate="header" let-columns>
+                    <tr>
+                      <th>Name </th>
+                      <th>Price</th>
+                      <th>Category</th>
+                      <th>Quantity</th>
+                      <th>Status</th>
+                      <th>Reviews</th>
+                    </tr>
+                  </ng-template>
+                  <ng-template pTemplate="body" let-product let-columns="columns">
+                    <tr>
+                      <td>
+                        {{product.name}}
+                      </td>
+                      <td>
+                        {{product.price | currency:'USD'}}
+                      </td>
+                      <td>
+                        {{product.category}}
+                      </td>
+                      <td>
+                        {{product.quantity}}
+                      </td>
+                      <td>
+                        <p-tag [value]="product.inventoryStatus" [severity]="" />
+                      </td>
+                      <td>
+                        <p-rating [(ngModel)]="product.rating" [readonly]="true" [cancel]="false" />
+                      </td>
+                    </tr>
+                  </ng-template>
+                </p-table>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
 </div>
